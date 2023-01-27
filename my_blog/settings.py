@@ -179,10 +179,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
-        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
         'drf_social_oauth2.authentication.SocialAuthentication',
     ],
@@ -221,22 +218,3 @@ EMAIL_HOST_USER ='anil.pune11@gmail.com'
 EMAIL_HOST_PASSWORD = "acqbpttqdyzqkfgj"
 DEFAULT_FROM_EMAIL = 'Celery <anil.pune11@gmail.com>'
 
-
-# AWS services conf
-# DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage",
-# STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
-
-# S3 bucket configuration
-# AWS_ACCESS_KEY_ID = ""
-# AWS_SECRET_ACCESS_KEY = ""
-# AWS_S3_BUCKET_NAME = ""
-
-# stripe configuration
-
-# STRIPE_PUBLISHABLE_KEY = 'pk_test_51MPQOQSEibFHYgaHC6CUkgNkPjlJFZNDjzqbTv5bvaDRIpl52vHF0d6m1iJuwykCp5A6e4iy3uLSXfTrog0K7d8j00ACE08Tfe'
-# STRIPE_SECRET_KEY = 'sk_test_51MPQOQSEibFHYgaHJ5sq1lfdCzuaCIfBdnTndNQGeqbMDPWNsu1BsrVXlL6snHilMRYikF7auakNwt55doXWocXv00HhTqoMvM'
-# STRIPE_PRICE_ID = 'price_1MPQd9SEibFHYgaHQRgLL2G6'
-
-
-# 840708859618-rm4fvhibo0dk7j8elukp00qp9uqqp52q.apps.googleusercontent.com
-# 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
